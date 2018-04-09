@@ -70,6 +70,7 @@
  				if ($user_id != null){
 
 	 				$q = "INSERT INTO $items (id, user_id, name, category, item_desc, img, img1, img2, img3, bid_min_amt, bid_max_amt, bid_interval, item_url_name, auction_date, expiry_date) VALUES ('$itm_id', '$user_id', '$itm_name', '$itm_cat', '$itm_desc', '$f0', '$f1', '$f2', '$f3', '$auct_starting_price','$auct_max', '$auct_bid_interval', '$url_name', '$auct_date_time', '$expiry_date')";
+	 		
 	 				if (mysqli_query($link, $q)){
 	 					echo "Item Saved Successfully!";	
 	 				} 
@@ -83,10 +84,6 @@
 
  			}
  		}
-
-
-
- 
 
 					/*var_dump($_FILES['itm_img']['tmp_name'][2]) ;*/
 		}
